@@ -1,0 +1,7 @@
+package javaApplet;
+
+import java.applet.Applet;
+
+public class TestApplet extends Applet {
+
+}

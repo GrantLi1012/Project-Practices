@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class BankMethods {
+	
+	//set up account
+	//choose service
+	//deposit
+	//withdraw
+	//interest rate
+	
+	private double balance;
+	private double interest;
+	private int service = 0;
+	private String name;
+	
+	public void chooseService() {
+		getName();
+		System.out.println("Welcome! " +name);
+		System.out.println("Choose service:\n1 for deposit\n2 for withdraw\n9 to show balance\n0 to quit");
+		Scanner in = new Scanner(System.in);
+		service = in.nextInt();
+		balance = 0;
+		
+		while(service != 0) {
+			if(service == 1) {
+				balance.deposit();
+			}
+			else if(service == 2) {
+				balance.withdraw();
+			}
+			else {
+				System.out.println("Can't recognize, enter again:");
+			}
+		}
+		
+	}
+	
+	public void getName() {
+		System.out.println("Enter user name:");
+		Scanner input = new Scanner(System.in);
+		this.name = input.nextLine();
+	}
+
+}

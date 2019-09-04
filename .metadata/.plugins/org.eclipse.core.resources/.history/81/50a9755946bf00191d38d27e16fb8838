@@ -1,0 +1,28 @@
+package stock_and_invoice;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StoreTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Stock> products = new ArrayList<Stock>();
+		products.add(new Stock("Apples", 10, 1.2));
+		products.add(new Stock("Pears", 2, 0.8));
+		products.add(new Stock("Books", 3, 10));
+		products.add(new Stock("Glues", 12, 3.5));
+		
+		System.out.println(products.get(1).getPrice());
+
+		/*
+		 * System.out.println("Enter max orders per day: "); Scanner input = new
+		 * Scanner(System.in); int maxOrder = input.nextInt();
+		 * 
+		 * for(int i=0;i<maxOrder;i++) {
+		 * 
+		 * }
+		 */
+	}
+
+}

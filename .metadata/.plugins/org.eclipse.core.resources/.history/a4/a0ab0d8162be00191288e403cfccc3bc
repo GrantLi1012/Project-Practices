@@ -1,0 +1,10 @@
+import java.applet.Applet;
+
+public class AppletPrac extends Applet {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

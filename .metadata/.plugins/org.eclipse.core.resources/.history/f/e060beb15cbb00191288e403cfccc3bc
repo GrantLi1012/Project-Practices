@@ -1,0 +1,10 @@
+package Demo4;
+
+public class Iterableinterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

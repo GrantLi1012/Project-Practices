@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		double celcius;
+		double fahrenheit = 0.0;
+		
+		Scanner input = new Scanner(System.in);
+		fahrenheit = input.nextDouble();
+		
+		celcius = (fahrenheit - 32)*5/9;
+		
+		System.out.printf("Temperature in celcius is:%.2f degrees.",celcius);
+	}
+
+}

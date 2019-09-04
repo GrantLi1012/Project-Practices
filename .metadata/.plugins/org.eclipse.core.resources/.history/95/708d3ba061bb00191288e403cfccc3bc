@@ -1,0 +1,14 @@
+package Demo4;
+
+public class Iterableinterface {
+
+	public static void main(String[] args) {
+		
+		UrlLibrary library = new UrlLibrary();
+		
+		for(String url: library) {
+			System.out.println(url); 
+		}
+	}
+
+}

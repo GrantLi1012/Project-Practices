@@ -1,0 +1,72 @@
+package stock_and_invoice;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StoreTest {
+
+	public static void main(String[] args) {
+
+		ArrayList<Stock> products = new ArrayList<Stock>();
+		products.add(new Stock("Apples", 10, 1.2));
+		products.add(new Stock("Pears", 2, 0.8));
+		products.add(new Stock("Books", 3, 10));
+		products.add(new Stock("Glues", 12, 3.5));
+
+		System.out.println(products.get(1).getPrice());
+
+		System.out.println("Enter max orders per day: ");
+		Scanner input = new Scanner(System.in);
+		int maxOrder = input.nextInt();
+		int orderCount = 0;
+
+		while (orderCount < maxOrder) {
+			System.out.println("Enter operation code:");
+			System.out.println("1 to sell\n2 to replenish\n3 to check product info\n0 to check total revenue");
+			int action = input.nextInt();
+
+			switch (action) {
+			case (1):
+				sell();
+				orderCount++;
+				break;
+
+			case (2):
+				replenish();
+				break;
+
+			case (3):
+				checkInfo();
+				break;
+
+			case (0):
+				checkRevenue();
+				break;
+
+			default:
+				System.out.println("Invalid code.");
+				break;
+			}
+
+			orderCount++;
+		}
+
+	}
+
+	public static void sell() {
+		System.out.println("Selling");
+	}
+
+	public static void replenish() {
+		System.out.println("Replenishing");
+	}
+
+	public static void checkInfo() {
+		System.out.println("Checking info");
+	}
+
+	public static void checkRevenue() {
+		System.out.println("Total revenue");
+	}
+
+}

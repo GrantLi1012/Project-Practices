@@ -1,0 +1,32 @@
+package Demo4;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Iteration {
+
+	public static void main(String[] args) {
+		LinkedList<String> animals = new LinkedList<String>();
+		animals.add("fox");
+		animals.add("cat");
+		animals.add("dog");
+		
+		/////1. for loop, print all
+		for(String animal: animals) {
+			System.out.println(animal);
+		}
+		
+		/////2. get one item (starting at 0)
+		System.out.println(animals.get(1));
+		
+		/////3. iterator, print all
+		Iterator<String> it = animals.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		/////4. forEach
+		animals.forEach(System.out::println);
+	}
+
+}

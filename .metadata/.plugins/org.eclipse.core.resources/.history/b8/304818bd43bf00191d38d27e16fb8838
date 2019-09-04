@@ -1,0 +1,25 @@
+package stock_and_invoice;
+
+import java.util.Scanner;
+
+public class Deal {
+	// sell
+	// notice and replenish
+	// check total revenue
+	double revenue = 0.0;
+
+	public Deal() {
+		public cost = 0;
+		int toSell = 1;
+		Scanner in = new Scanner(System.in);
+		do {
+			System.out.println("Enter 1 to sell, 0 to check out.");
+			toSell = in.nextInt();
+			if(toSell != 0) {
+				sell();
+			}
+		}while(toSell != 0);
+	}
+	
+	public sell
+}

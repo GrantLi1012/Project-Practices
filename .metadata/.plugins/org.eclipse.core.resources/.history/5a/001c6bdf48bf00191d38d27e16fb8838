@@ -1,0 +1,55 @@
+package stock_and_invoice;
+
+public class Stock {
+	//product id
+	//product description
+	//product stock
+	//product price
+	//check product info
+	
+	private int id;
+	private String dec;
+	private int stock;
+	private double price;
+	
+	int idCount = 0;
+	
+	//setters by constructor
+	public Stock(String dec, int stock, double price){
+		this.id = idCount;
+		this.dec = dec;
+		this.stock = stock;
+		this.price = price;
+		idCount++;
+	}
+
+	
+	//Getters & show info
+	public int getId() {
+		return id;
+	}
+
+	public String getDec() {
+		return dec;
+	}
+
+	public int getStock() {
+		return stock;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public String showInfo(Stock product) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("ID: "+product.id);
+		sb.append("\n");
+		sb.append("Description: "+product.dec);
+		sb.append("\n");
+		sb.append("Stock:"+product.stock);
+		sb.append("\n");
+		sb.append("Price: "+product.price);
+		return sb.toString();
+	}
+}

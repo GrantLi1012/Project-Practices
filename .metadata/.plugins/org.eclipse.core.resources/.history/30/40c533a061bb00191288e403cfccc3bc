@@ -1,0 +1,20 @@
+package Demo4;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class UrlLibrary implements Iterable<String> {
+	private LinkedList<String> urls = new LinkedList<String>();
+	
+	public UrlLibrary() {
+		urls.add("https://www.caveofprogramming.com");
+		urls.add("https://facebook.com/caveofprogramming");
+		urls.add("https://news.bbc.co.uk");
+		
+	}
+
+	@Override
+	public Iterator<String> iterator() {
+		return urls.iterator();
+	}
+}

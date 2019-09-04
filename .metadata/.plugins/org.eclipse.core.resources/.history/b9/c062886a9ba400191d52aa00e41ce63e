@@ -1,0 +1,17 @@
+package Demo2;
+
+public class App {
+
+	public static void main(String[] args) {
+		//1. checked exceptions: must be handled
+		//2. unchecked/runtime exceptions: serious problems
+		//that needs to be addressed, java won't even force 
+		//you to handled it
+		
+		String[] texts = {"one","two","three"};
+		
+		System.out.println(texts[3]);
+
+	}
+
+}
